@@ -2,12 +2,13 @@
 
 include: "/app-marketing-google-ads-adapter/*.view"
 include: "/app-marketing-google-ads/*.view"
-include: "/app-marketing-google-ads/google_block_overview.dashboard"
+include: "/app-marketing-google-ads/adwords_overview.dashboard"
 include: "/app-marketing-common/pdt_base.view.lkml"
-include: "/app-marketing-google-ads/google_block_spend.dashboard"
-include: "/app-marketing-google-ads/google_block_clicks.dashboard"
-include: "/app-marketing-google-ads/google_block_impressions.dashboard"
-include: "/app-marketing-google-ads/google_block_conversions.dashboard"
+include: "/app-marketing-google-ads/campaign_metrics_spend.dashboard"
+include: "/app-marketing-google-ads/campaign_metrics_clicks.dashboard"
+include: "/app-marketing-google-ads/campaign_metrics_impressions.dashboard"
+include: "/app-marketing-google-ads/campaign_metrics_conversions.dashboard"
+include: "/app-marketing-google-ads/google_ads_base.dashboard"
 
 # TODO: Update Google Ads schema
 datagroup: adwords_etl_datagroup {
