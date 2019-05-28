@@ -14,7 +14,7 @@ remote_dependency: app-marketing-google-ads-adapter {
 
 remote_dependency: app-marketing-google-ads {
   url: "git://github.com/looker/app-marketing-google-ads"
-  ref: "c688fcf64152df8fa44036dc08539d372fe5fbdd"
+  ref: "650dcacd866804986c1d5371baceae141f29f2a3"
 }
 
 # TODO: Update connection
