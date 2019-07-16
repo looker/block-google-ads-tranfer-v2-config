@@ -1,6 +1,11 @@
 - dashboard: adwords_overview
-  extends: google_ads_base
   title: Google AdWords Overview
+  layout: newspaper
+  embed_style:
+  background_color: "#ffffff"
+  title_color: "#3a4245"
+  tile_text_color: "#3a4245"
+  text_tile_text_color: ''
   elements:
   - title: Conversion Trend
     name: Conversion Trend
