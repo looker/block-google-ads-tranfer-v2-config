@@ -1,5 +1,11 @@
 - dashboard: campaign_metrics_spend
   title: Google Adwords - Spend
+  layout: newspaper
+  embed_style:
+  background_color: "#ffffff"
+  title_color: "#3a4245"
+  tile_text_color: "#3a4245"
+  text_tile_text_color: ''
   elements:
   - title: Spend To Date
     name: Spend To Date
