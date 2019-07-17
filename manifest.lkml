@@ -5,10 +5,6 @@ constant: CONNECTION_NAME {
   value: "looker_application"
 }
 
-constant: CONFIG_PROJECT {
-  value: "block-google-ads-config"
-}
-
 # TODO: Update schema
 constant: ADWORDS_SCHEMA {
   value: "google_ads"
@@ -26,11 +22,7 @@ remote_dependency: app-marketing-google-ads-adapter {
   ref: "fd889415faea8fe453c4f9595497f9e2cec6b322"
 }
 
-# remote_dependency: app-marketing-google-ads {
-#   url: "git://github.com/looker/app-marketing-google-ads"
-#   ref: "9c1627bd4a62fda841564447b6619604ffe8d783"
-# }
-
-local_dependency: {
-  project: "app-marketing-google-ads"
+remote_dependency: app-marketing-google-ads {
+  url: "git://github.com/looker/app-marketing-google-ads"
+  ref: "9c1627bd4a62fda841564447b6619604ffe8d783"
 }
