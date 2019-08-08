@@ -4,6 +4,16 @@ datagroup: adwords_etl_datagroup {
   max_cache_age: "24 hours"
 }
 
+view: adwords_config {
+  extension: required
+
+  # TODO: Update Google Ads schema
+  dimension: adwords_schema {
+    hidden: no
+    sql:@{ADWORDS_SCHEMA};;
+  }
+}
+
 view: ad_metrics_base_config {
   extends: [ad_metrics_base_template]
   extension: required
