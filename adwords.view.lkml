@@ -76,6 +76,7 @@ explore: ad_impressions_daily_config {
 
   view: ad_impressions_daily_config {
   extends: [ad_impressions_daily_template]
+    extension: required
 }
 
 # Daily Campaign Aggregation
@@ -92,6 +93,7 @@ view: ad_impressions_campaign_config {
 # Hourly Campaign Aggregation
 explore: ad_impressions_campaign_daily_config {
   extends: [ad_impressions_campaign_daily_template]
+  extension: required
 }
 
 view: ad_impressions_campaign_daily_config {
