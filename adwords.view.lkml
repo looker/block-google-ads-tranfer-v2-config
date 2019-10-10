@@ -68,15 +68,15 @@ view: ad_impressions_config {
 }
 
 # Hourly Account Aggregation
-explore: ad_impressions_hour_config {
-  extends: [ad_impressions_hour_template]
+explore: ad_impressions_daily_config {
+  extends: [ad_impressions_daily_template]
   hidden: yes     #TODO change hidden:yes to hidden:no if you want to expose this Explore
   extension: required
 }
 
-view: ad_impressions_hour_config {
-  extends: [ad_impressions_hour_template]
-  extension: required
+  view: ad_impressions_daily_config {
+  extends: [ad_impressions_daily_template]
+    extension: required
 }
 
 # Daily Campaign Aggregation
@@ -91,13 +91,13 @@ view: ad_impressions_campaign_config {
 }
 
 # Hourly Campaign Aggregation
-explore: ad_impressions_campaign_hour_config {
-  extends: [ad_impressions_campaign_hour_template]
+explore: ad_impressions_campaign_daily_config {
+  extends: [ad_impressions_campaign_daily_template]
   extension: required
 }
 
-view: ad_impressions_campaign_hour_config {
-  extends: [ad_impressions_campaign_hour_template]
+view: ad_impressions_campaign_daily_config {
+  extends: [ad_impressions_campaign_daily_template]
   extension: required
 }
 
