@@ -1,4 +1,4 @@
-# TODO: Update Google Ads schema
+
 datagroup: adwords_etl_datagroup {
   sql_trigger: SELECT COUNT(*) FROM `@{ADWORDS_SCHEMA}.account_hourly_stats` ;;
   max_cache_age: "24 hours"
@@ -7,9 +7,9 @@ datagroup: adwords_etl_datagroup {
 view: adwords_config {
   extension: required
 
-  # TODO: Update Google Ads schema
+# Should remain hidden as it's not intended to be used as a column.
   dimension: adwords_schema {
-    hidden: no
+    hidden: yes
     sql:@{ADWORDS_SCHEMA};;
   }
 }
