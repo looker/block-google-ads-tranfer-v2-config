@@ -83,7 +83,7 @@ explore: ad_impressions_daily_config {
 explore: ad_impressions_campaign_config {
   extends: [ad_impressions_campaign_template]
   extension: required
-  hidden: no #TODO change hidden:yes to hidden:no if you want to expose this Explore
+  hidden: no
   group_label: "Block Adwords"
 }
 
@@ -140,7 +140,7 @@ view: ad_impressions_keyword_config {
 
 # Daily Ad Aggregation
 explore: ad_impressions_ad_config {
-  hidden: no #TODO change hidden:yes to hidden:no if you want to expose this Explore
+  hidden: no
   group_label: "Block Adwords"
   extends: [ad_impressions_ad_template]
   extension: required
@@ -223,7 +223,7 @@ view: ad_impressions_video_config {
 
 explore: adwords_period_comparison_config {
   extends: [period_fact]
-  hidden: no #TODO change hidden:yes to hidden:no if you want to expose this Explore
+  hidden: no
   group_label: "Block Adwords"
   extension: required
 }
