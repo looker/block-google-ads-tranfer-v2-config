@@ -12,6 +12,11 @@ view: adwords_config {
     hidden: yes
     sql:@{ADWORDS_SCHEMA};;
   }
+
+  dimension: adwords_customer_id {
+    hidden: yes
+    sql:@{ADWORDS_CUSTOMER_ID};;
+  }
 }
 
 view: ad_metrics_base_config {
