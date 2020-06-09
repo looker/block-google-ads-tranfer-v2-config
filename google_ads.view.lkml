@@ -1,6 +1,6 @@
 
 datagroup: adwords_etl_datagroup {
-  sql_trigger: SELECT COUNT(*) FROM `@{ADWORDS_SCHEMA}.account_hourly_stats` ;;
+  sql_trigger: SELECT COUNT(*) FROM `@{GOOGLE_ADS_SCHEMA}.account_hourly_stats` ;;
   max_cache_age: "24 hours"
 }
 
@@ -89,7 +89,7 @@ explore: ad_impressions_campaign_config {
   extends: [ad_impressions_campaign_template]
   extension: required
   hidden: no
-  group_label: "Block Adwords"
+  group_label: "Block Google Ads"
 }
 
 view: ad_impressions_campaign_config {
@@ -146,7 +146,7 @@ view: ad_impressions_keyword_config {
 # Daily Ad Aggregation
 explore: ad_impressions_ad_config {
   hidden: no
-  group_label: "Block Adwords"
+  group_label: "Block Google Ads"
   extends: [ad_impressions_ad_template]
   extension: required
 }
@@ -229,7 +229,7 @@ view: ad_impressions_video_config {
 explore: adwords_period_comparison_config {
   extends: [period_fact]
   hidden: no
-  group_label: "Block Adwords"
+  group_label: "Block Google Ads"
   extension: required
 }
 
