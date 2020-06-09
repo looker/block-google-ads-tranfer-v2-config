@@ -4,18 +4,18 @@ datagroup: adwords_etl_datagroup {
   max_cache_age: "24 hours"
 }
 
-view: adwords_config {
+view: google_ads_config {
   extension: required
 
 # Should remain hidden as it's not intended to be used as a column.
   dimension: adwords_schema {
     hidden: yes
-    sql:@{ADWORDS_SCHEMA};;
+    sql:@{GOOGLE_ADS_SCHEMA};;
   }
 
   dimension: adwords_customer_id {
     hidden: yes
-    sql:@{ADWORDS_CUSTOMER_ID};;
+    sql:@{GOOGLE_ADS_CUSTOMER_ID};;
   }
 }
 

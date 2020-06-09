@@ -1,11 +1,11 @@
 project_name: "block-google-ads-transfer-config"
 
-constant: ADWORDS_SCHEMA {
+constant: GOOGLE_ADS_SCHEMA {
   value: "adwords_v201609"
   export: override_required
 }
 
-constant: ADWORDS_CUSTOMER_ID {
+constant: GOOGLE_ADS_CUSTOMER_ID {
   value: "6747157124"
   export: override_required
 }
