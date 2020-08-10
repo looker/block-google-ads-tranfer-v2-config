@@ -5,5 +5,6 @@ explore: ad_basic_stats_config {
   extension: required
 }
 
-explore: clicks_fraud_analysis {
+explore: click_fraud_analysis {
+  description: "Clicks forecast and fraud analysis"
 }
